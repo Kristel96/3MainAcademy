@@ -1,0 +1,10 @@
+.father{
+    height: 400px;
+    width: 100%;
+    background-color: yellow;
+}
+.daughter {
+    height: 200px;
+    width: 50px;
+    background-color: red;
+}
