@@ -1,10 +1,73 @@
-.father{
-    height: 400px;
-    width: 100%;
-    background-color: yellow;
+.space{
+    background-image: url("space.jpg");
+    margin: 80px auto;
 }
-.daughter {
-    height: 200px;
-    width: 50px;
+.mars{
+    top: 7px;
+    left: 7px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
     background-color: red;
+    border-radius: 50%;
+}
+.sun{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    height: 150px;
+    width: 150px;
+    background-color: #fffd28;
+    border-radius: 50%;
+}
+.scale:hover{
+  transition: 1s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.orbit{
+    top: 12%;
+    left: 12%;
+    /*margin: 30px auto;*/
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid white;
+    -webkit-animation-name: spin;
+    -moz-animation-name: spin;
+    -o-animation-name: spin;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear;
+}
+.orbit:hover{
+    animation-play-state: paused;
+}
+@keyframes spin {
+    from {transform: rotate(0deg) }
+    to{transform: rotate(360deg) }
+}
+.jupiter{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.upper-orbit{
+    margin: 30px auto;
+    height: 400px;
+    width: 400px;
+    border:3px solid royalblue;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50%;
+    border-radius: 50% ;
+    animation-name: upper-spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear;
+}
+@keyframes upper-spin {
+    from {transform: rotate(0deg) }
+    to{transform: rotate(360deg) }
 }
