@@ -1,73 +1,36 @@
-.space{
-    background-image: url("space.jpg");
-    margin: 80px auto;
+* {
+  margin: 0;
+  padding: 0;
 }
-.mars{
-    top: 7px;
-    left: 7px;
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    background-color: red;
-    border-radius: 50%;
+.header {
+  background-image: url("assets/zdenek.jpg");
+  height: 200px;
+  background-size: cover;
 }
-.sun{
-    position: absolute;
-    left: 25%;
-    top: 25%;
-    height: 150px;
-    width: 150px;
-    background-color: #fffd28;
-    border-radius: 50%;
+.container {
+  margin: 0 5%;
 }
-.scale:hover{
-  transition: 1s;
-  transform: scale(1.2);
+.container .navigation {
+  height: 50px;
+  background-color: black;
+}
+.container .navigation .nav-button {
+  color: yellowgreen;
+  margin: 2px 5px;
+  padding: 2px 15px;
+  height: 45px;
+  background-color: black;
+  border: 0;
+}
+.container .navigation .nav-button:hover {
+  transition: 0.3s;
   cursor: pointer;
+  background-color: darkgreen;
 }
-.orbit{
-    top: 12%;
-    left: 12%;
-    /*margin: 30px auto;*/
-    position: relative;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 3px solid white;
-    -webkit-animation-name: spin;
-    -moz-animation-name: spin;
-    -o-animation-name: spin;
-    animation-name: spin;
-    animation-duration: 5s;
-    animation-iteration-count: infinite ;
-    animation-timing-function: linear;
+.container .sidebar {
+  width: 400px;
 }
-.orbit:hover{
-    animation-play-state: paused;
+.container .sidebar .side-card img {
+  height: 400px;
 }
-@keyframes spin {
-    from {transform: rotate(0deg) }
-    to{transform: rotate(360deg) }
-}
-.jupiter{
-    position: absolute;
-    height: 100px;
-    width: 100px;
-}
-.upper-orbit{
-    margin: 30px auto;
-    height: 400px;
-    width: 400px;
-    border:3px solid royalblue;
-    -webkit-border-radius: 50% ;
-    -moz-border-radius: 50%;
-    border-radius: 50% ;
-    animation-name: upper-spin;
-    animation-duration: 5s;
-    animation-iteration-count: infinite ;
-    animation-timing-function: linear;
-}
-@keyframes upper-spin {
-    from {transform: rotate(0deg) }
-    to{transform: rotate(360deg) }
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+@import "styles/variables";
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-image: url("assets/zdenek.jpg");
+  height: 200px;
+  background-size: cover;
+}
+.container{
+  margin: 0 5%;
+  .navigation{
+    height: 50px;
+    background-color:@navbar-color ;
+    .nav-button{
+      color: @content-color;
+      margin: 2px 5px;
+      padding: 2px 15px;
+      height: 45px;
+      background-color: black;
+      border: 0;
+      &:hover{
+        transition: 0.3s;
+        cursor: pointer;
+        background-color: darkgreen;
+      }
+    }
+  }
+  .sidebar{
+    width: 400px;
+    .side-card{
+      img{
+        height: 400px;
+      }
+    }
+  }
+  .main-content{
+  }
+
+}
+
+
