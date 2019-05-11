@@ -8,27 +8,39 @@
   height: 200px;
   background-size: cover;
 }
-.container{
-  margin: 0 5%;
   .navigation{
     height: 50px;
     background-color:@navbar-color ;
-    .nav-button{
-      color: @content-color;
-      margin: 2px 5px;
-      padding: 2px 15px;
-      height: 45px;
-      background-color: black;
-      border: 0;
-      &:hover{
-        transition: 0.3s;
-        cursor: pointer;
-        background-color: darkgreen;
+    .navbar-container{
+      margin: @container;
+      .nav-button{
+        color: @content-color;
+        margin: 2px 5px;
+        padding: 2px 15px;
+        height: 45px;
+        background-color: black;
+        border: 0;
+        &:hover{
+          transition: 0.3s;
+          cursor: pointer;
+          background-color: darkgreen;
+        }
+        &:first-child{
+          margin-left: 0;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
       }
     }
+
   }
+.container{
+  margin: @container;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   .sidebar{
-    width: 400px;
     .side-card{
       img{
         height: 400px;
@@ -36,8 +48,9 @@
     }
   }
   .main-content{
+    .article-wrap{
+    }
   }
-
 }
 
 

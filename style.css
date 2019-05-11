@@ -7,14 +7,14 @@
   height: 200px;
   background-size: cover;
 }
-.container {
-  margin: 0 5%;
-}
-.container .navigation {
+.navigation {
   height: 50px;
   background-color: black;
 }
-.container .navigation .nav-button {
+.navigation .navbar-container {
+  margin: 0 5%;
+}
+.navigation .navbar-container .nav-button {
   color: yellowgreen;
   margin: 2px 5px;
   padding: 2px 15px;
@@ -22,13 +22,22 @@
   background-color: black;
   border: 0;
 }
-.container .navigation .nav-button:hover {
+.navigation .navbar-container .nav-button:hover {
   transition: 0.3s;
   cursor: pointer;
   background-color: darkgreen;
 }
-.container .sidebar {
-  width: 400px;
+.navigation .navbar-container .nav-button:first-child {
+  margin-left: 0;
+}
+.navigation .navbar-container .nav-button:last-child {
+  margin-right: 0;
+}
+.container {
+  margin: 0 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .container .sidebar .side-card img {
   height: 400px;

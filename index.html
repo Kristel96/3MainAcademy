@@ -9,12 +9,14 @@
 
 <body>
 <header class="header"></header>
-<div class="container">
 <nav class="navigation">
+    <div class="navbar-container">
     <button class="nav-button"> HOME</button>
     <button class="nav-button"> ABOUT US</button>
     <button class="nav-button"> CONTACT</button>
+    </div>
 </nav>
+<div class="container">
 <aside  class="sidebar">
     <div class="side-card">
         <img src="assets/yuichi.jpg">
@@ -22,16 +24,18 @@
     </div>
 </aside>
 <section class="main-content">
-    <article>
-        <video>
+    <div class="article-wrap">
+        <article>
+            <video width="560" height="315" controls>
+                <source src="https://www.youtube.com/embed/rX40mBb8bkU">
+            </video>
+        </article>
+        <article>
+            <audio>
 
-        </video>
-    </article>
-    <article>
-        <audio>
-
-        </audio>
-    </article>
+            </audio>
+        </article>
+    </div>
 </section>
 </div>
 <footer></footer>
