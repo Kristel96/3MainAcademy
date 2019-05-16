@@ -33,6 +33,62 @@
 .navigation .navbar-container .nav-button:last-child {
   margin-right: 0;
 }
+@media all and (min-width: 0px) and (max-width: 400px) {
+  .navigation {
+    height: 100px;
+    background-color: red;
+  }
+  .navigation .navbar-container {
+    margin: 0 5%;
+  }
+  .navigation .navbar-container .nav-button {
+    color: yellowgreen;
+    margin: 2px 5px;
+    padding: 2px 15px;
+    height: 45px;
+    background-color: red;
+    border: 0;
+  }
+  .navigation .navbar-container .nav-button:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: darkgreen;
+  }
+  .navigation .navbar-container .nav-button:first-child {
+    margin-left: 0;
+  }
+  .navigation .navbar-container .nav-button:last-child {
+    margin-right: 0;
+  }
+}
+@media all and (min-width: 400px) and (max-width: 800px) {
+  .navigation {
+    height: 75px;
+    background-color: blue;
+  }
+  .navigation .navbar-container {
+    margin: 0 5%;
+  }
+  .navigation .navbar-container .nav-button {
+    color: yellowgreen;
+    margin: 2px 5px;
+    padding: 2px 15px;
+    height: 45px;
+    background-color: blue;
+    border: 0;
+  }
+  .navigation .navbar-container .nav-button:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: darkgreen;
+  }
+  .navigation .navbar-container .nav-button:first-child {
+    margin-left: 0;
+  }
+  .navigation .navbar-container .nav-button:last-child {
+    margin-right: 0;
+  }
+}
 .container {
   margin: 0 5%;
   display: flex;
@@ -41,5 +97,17 @@
 }
 .container .sidebar .side-card img {
   height: 400px;
+}
+.container .main-content_article {
+  margin: 15px;
+  text-align: justify;
+}
+.footer {
+  height: 50px;
+  background-color: yellowgreen;
+}
+.footer-text {
+  text-align: center;
+  padding: 15px;
 }
 /*# sourceMappingURL=style.css.map */

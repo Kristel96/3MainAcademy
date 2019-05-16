@@ -8,9 +8,9 @@
   height: 200px;
   background-size: cover;
 }
-  .navigation{
-    height: 50px;
-    background-color:@navbar-color ;
+.mixin (@height:50px; @nav:@navbar-color){
+    height: @height;
+    background-color:@nav ;
     .navbar-container{
       margin: @container;
       .nav-button{
@@ -18,7 +18,7 @@
         margin: 2px 5px;
         padding: 2px 15px;
         height: 45px;
-        background-color: black;
+        background-color: @nav;
         border: 0;
         &:hover{
           transition: 0.3s;
@@ -35,6 +35,22 @@
     }
 
   }
+.navigation{
+  .mixin();
+}
+
+@media all and (min-width: 0px) and (max-width: 400px) {
+  .navigation{
+    .mixin(@height: 100px; @nav: red);
+  }
+
+}
+
+@media all and (min-width: 400px) and (max-width: 800px) {
+  .navigation {
+    .mixin(@height: 75px; @nav: blue);
+  }
+}
 .container{
   margin: @container;
   display: flex;
@@ -48,8 +64,18 @@
     }
   }
   .main-content{
-    .article-wrap{
-    }
+&_article{
+  margin: 15px;
+  text-align: justify;
+}
+  }
+}
+.footer{
+  height: 50px;
+  background-color:@footer-color;
+  &-text{
+    text-align: center;
+    padding: 15px;
   }
 }
 
