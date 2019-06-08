@@ -6,30 +6,10 @@
     <title>Learn how Bootstrap</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<nav class="navbar"><a>Главная</a>|<a>Контакты</a>|<a>О сайте</a></nav>
-<div class="container">
-    <div>
-        <input type="button" value="Toggle" id="toggle-theme" />
-    </div>
-    <h2 class="title">Заголовок</h2>
-    <p class="content">Основное содержимое...</p>
-</div>
-<footer>
-    <p></p>
-</footer>
+<div id="usersContainer">
 
-<script>
-    const toggleBtn = document.querySelector("#toggle-theme");
-    toggleBtn.addEventListener("click", function() {
-        if(document.documentElement.hasAttribute("theme")){
-            document.documentElement.removeAttribute("theme");
-        }
-        else{
-            document.documentElement.setAttribute("theme", "dark");
-        }
-    });
-</script>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
