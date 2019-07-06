@@ -1,9 +1,29 @@
-
-#usersContainer{
-  margin: 0 auto;
+.mainHeader{
+  text-align: center;
+  font-family: fantasy;
 }
-.mainCont{
-text-align: center;
+.rowContainer{
+  display: flex;
+  justify-content: center;
 }
-
+.rowContainer>div:hover{
+   cursor: pointer;
+   background-color: aliceblue;
+ }
+.rowContainer>div:active{
+  border: 1px solid lightskyblue;
+}
+#secondaryCont{
+  display: none;
+  margin: 0 15%;
+}
+#sunSign{
+  font-weight: bold;
+}
+#mood{
+  font-weight: bold;
+}
+.imgWrapper{
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

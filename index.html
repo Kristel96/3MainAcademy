@@ -7,12 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<iframe src="https://uk.wikipedia.org/wiki/General_Motors" height="200" width="1200" ></iframe>
-<div id="usersContainer">
-    <div>Audi<button onclick="showAudi()"> Show me more </button></div>
-    <div>Chevrolet<button onclick="showChevrolet()">Show me more</button></div>
-    <div>BMW<button onclick="showBMW()"> Show me more</button></div>
-    <div>Opel<button onclick="showOpel()">Show me more</button></div>
+<h1 id="header" class="mainHeader"> Choose your Sunsign </h1>
+<div id="mainCont" class="mainContainer">
+    <div class="rowContainer">
+        <div id="gemini" onclick="getSignHoroscope(this)"><img src="assets/gemini.png"></div>
+        <div id="aquarius" onclick="getSignHoroscope(this)"><img src="assets/aquarius.png"></div>
+        <div id="aries" onclick="getSignHoroscope(this)"><img src="assets/aries.png"></div>
+        <div id="cancer" onclick="getSignHoroscope(this)"><img src="assets/cancer.png"></div>
+    </div>
+    <div class="rowContainer">
+        <div id="capricorn" onclick="getSignHoroscope(this)"><img src="assets/capricorn.png"></div>
+        <div id="leo" onclick="getSignHoroscope(this)"><img src="assets/leo.png"></div>
+        <div id="libra" onclick="getSignHoroscope(this)"><img src="assets/libra.png"></div>
+        <div id="pisces" onclick="getSignHoroscope(this)"><img src="assets/pisces.png"></div>
+    </div>
+    <div class="rowContainer">
+        <div id="sagittarius" onclick="getSignHoroscope(this)"><img src="assets/sagitaurius.png"></div>
+        <div id="scorpio" onclick="getSignHoroscope(this)"><img src="assets/scorpio.png"></div>
+        <div id="taurus" onclick="getSignHoroscope(this)"><img src="assets/taurus.png"></div>
+        <div id="virgo" onclick="getSignHoroscope(this)"><img src="assets/virgo.png"></div>
+    </div>
+</div>
+<div id="secondaryCont">
+    <div class="imgWrapper">
+    <img id="randomImg" src="">
+    </div>
+    <p>Your Sunsign is: <span id="sunSign"></span> </p>
+    <h3>Your horoscope for today is:</h3>
+    <div id="serverContent"></div>
+    <p>Mood for today: <span id="mood"></span></p>
+    <button onclick="showAllSigns()"> Show me other Zodiak signs</button>
 </div>
 <script src="main.js"></script>
 </body>
