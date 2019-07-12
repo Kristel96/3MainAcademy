@@ -42,3 +42,6 @@ function hideAllSigns() {
     mainContainer.style.display = "none";
     mainHeader.innerText= "You are lucky today!";
 }
+var allUsers = [];
+
+
